@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/rainrain" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:fontFamily="casual"
+        android:paddingHorizontal="10dp"
+        android:text="Aakash Dekho"
+        android:textColor="#111741"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textCity"
+        android:layout_width="261dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Enter City"
+        android:inputType="textPersonName"
+        android:textColor="#111741"
+        android:textColorHighlight="@android:color/holo_green_dark"
+        android:textColorHint="#111741"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <Button
+        android:id="@+id/btnFind"
+        android:layout_width="154dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#111741"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Find "
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCity" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="28dp"
+        android:background="#111741"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:paddingBottom="0dp"
+        android:text="WEATHER : "
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFind" />
+</androidx.constraintlayout.widget.ConstraintLayout>
